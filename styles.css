@@ -188,6 +188,10 @@ footer {
 
 /* Mobile styling */
 @media (max-width: 809px) {
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
     .info-block {
         flex-direction: column; /* Stacks video and content on top of each other */
         align-items: center;
