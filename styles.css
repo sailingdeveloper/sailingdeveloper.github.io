@@ -15,7 +15,7 @@ header {
     padding: 30px;
     position: sticky;
     top: 0;
-    background-color: white; 
+    background-color: white;
     z-index: 100;
 }
 
@@ -58,6 +58,45 @@ header {
     width: 100%;
     max-width: 300px;
     padding: 30px
+}
+
+/* Sale Header Section */
+.sale-header {
+    text-align: center;
+    padding: 80px 50px;
+    background-color: rgba(168, 115, 232, 0.1);
+}
+
+.sale-header h2 {
+    font-size: 48px;
+    font-family: 'Outfit-SemiBold';
+    color: #333333;
+    margin: 0 0 20px 0;
+}
+
+.sale-header p {
+    font-size: 24px;
+    font-family: 'Outfit-Regular';
+    color: #797979;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #A873E8;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Outfit-SemiBold';
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #9461d3;
 }
 
 /* Info Block Section */
@@ -192,6 +231,18 @@ footer {
         font-size: 48px;
     }
 
+    .sale-header {
+        padding: 50px 30px;
+    }
+
+    .sale-header h2 {
+        font-size: 36px;
+    }
+
+    .sale-header p {
+        font-size: 20px;
+    }
+
     .info-block {
         flex-direction: column; /* Stacks video and content on top of each other */
         align-items: center;
@@ -199,8 +250,8 @@ footer {
     }
 
     .second-info-block {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         padding: 30px;
     }
 
