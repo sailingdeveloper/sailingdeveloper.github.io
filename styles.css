@@ -1,0 +1,208 @@
+@import url('fonts/outfit/Fonts/WEB/css/outfit.css');
+
+body {
+    font-family: 'Outfit-Regular';
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    background-color: white; 
+    z-index: 100;
+}
+
+.logo {
+    height: 60px;
+}
+
+.app-store-badge {
+    height: 40px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 50px;
+}
+
+/* Title */
+.hero-text h1 {
+    font-size: 80px;
+    font-family: 'Outfit-SemiBold';
+    background: radial-gradient(circle at center, #0A215B, #7270CA, #BD6BA9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 28px;
+    font-family: 'Outfit-Regular';
+    color: #797979;
+    margin-top: 10px;
+}
+
+/* Image */
+.hero-image {
+    width: 100%;
+    max-width: 300px;
+    padding: 30px
+}
+
+/* Info Block Section */
+.info-block {
+    display: flex;
+    align-items: center;
+    background-color: rgba(168, 115, 232, 0.05); /* #A873E8 with 5% opacity */
+    padding: 50px;
+    margin-top: 50px;
+}
+
+/* Second Info Block */
+.second-info-block {
+    flex-direction: row-reverse; /* Swap content and video (text left, video right) */
+    background-color: #FFFFFF;
+}
+
+/* Video Container */
+.video-container {
+    width: 300px; /* Width of the square */
+    height: 300px; /* Height of the square */
+    overflow: hidden;
+    border-radius: 20px; /* Rounded corners */
+    margin-right: 60px; /* Space between video and content */
+}
+
+/* Second Video Container (Respect Aspect Ratio) */
+.second-video-container {
+    width: 300px; /* Keep the width same as the original square */
+    height: auto; /* Allow height to adjust based on aspect ratio */
+    border-radius: 20px;
+    margin-left: 60px; /* Space between video and content */
+}
+
+/* Video Element */
+.info-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video is centered and covers the area */
+}
+
+/* Content Section */
+.info-content h2 {
+    font-size: 48px;
+    font-family: 'Outfit-SemiBold';
+    margin: 0;
+    color: #333333;
+}
+
+.info-content p {
+    font-size: 24px;
+    font-family: 'Outfit-Regular';
+    color: #797979;
+    line-height: 1.5;
+}
+
+.info-icon {
+    width: 40px;
+    margin-right: 30px;
+    fill: #A873E8; /* Accent color for SVG */
+}
+
+/* Footer */
+footer {
+    background-color: #A873E8;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-logo {
+    width: 240px; /* Adjust size as needed */
+}
+
+.footer-subtitle {
+    font-size: 20px;
+    font-family: 'Outfit-Regular';
+    color: #d6d6d6;
+}
+
+.app-store-badge {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.footer-email {
+    font-size: 14px;
+    font-family: 'Outfit-Regular';
+    color: #d6d6d6;
+    margin-top: 10px;
+}
+
+
+/* Desktop styling */
+@media (min-width: 810px) {
+    body {
+        background: linear-gradient(to top, #E3CCFF 0%, #FFFFFF 30%);
+    }
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 110px;
+    }
+
+    .hero-text {
+        max-width: 50%;
+    }
+
+    .hero-image {
+        max-width: 20%;
+    }
+
+    .info-block {
+        padding: 110px;
+        flex-direction: row;
+    }
+
+    .second-info-block {
+        flex-direction: row-reverse;
+    }
+
+    .info-content {
+        max-width: 75%;
+    }
+}
+
+/* Mobile styling */
+@media (max-width: 809px) {
+    .info-block {
+        flex-direction: column; /* Stacks video and content on top of each other */
+        align-items: center;
+        padding: 30px;
+    }
+
+    .second-info-block {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 30px;
+    }
+
+    .video-container,
+    .second-video-container {
+        margin-right: 0; /* Remove right margin when in column layout */
+        margin-bottom: 20px; /* Add space between video and content */
+    }
+}
